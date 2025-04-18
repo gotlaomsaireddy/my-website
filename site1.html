@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Entry + Typing Effect</title>
+
+  <style>
+    /* Basic reset and styles */
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    /* Container for entry effect */
+    .container {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeSlideIn 2s forwards;
+      text-align: center;
+    }
+
+    /* Entry animation */
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Typing effect container */
+    .typing-effect {
+      display: inline-block;
+      border-right: 2px solid #00ffff;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      animation:
+        typing 4s steps(30, end) forwards,
+        blink-caret 0.75s step-end infinite;
+    }
+
+    /* Typing animation */
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 26ch; } /* Adjust for text length */
+    }
+
+    /* Blinking cursor */
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: #00ffff; }
+    }
+
+    /* Additional subtext with fade-in effect */
+    .sub-text {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #ffffff;
+      opacity: 0;
+      animation: fadeIn 3s 4s forwards; /* Starts after typing ends */
+    }
+
+    /* Fade-in animation for subtext */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Optional buttons with entry animation */
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      opacity: 0;
+      animation: fadeIn 3s 5s forwards; /* Delay after subtext */
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #00ffff;
+      color: #0d0d0d;
+    }
+
+  </style>
+</head>
+<body>
+    <!-- Typing effect -->
+    <div class="typing-effect">Hello, I'm Sai Reddy.</div>
+
+    <!-- Subtext appears after typing -->
+    <div class="sub-text">Web Developer | Designer | Coder</div>
+
+    <!-- Optional buttons with entry animation -->
+    <div class="buttons">
+      <button class="btn">About</button>
+      <button class="btn">Projects</button>
+      <button class="btn">Contact</button>
+    </div>
+  </div>
+  <a href="index.html">
+  <button class="button"> Go to About Page</button>
+</body>
+</html>
