@@ -1,0 +1,70 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+  }
+  
+  header nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .categories, .featured-products {
+    margin-bottom: 30px;
+  }
+  
+  .category-list, .product-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .category-item, .product-item {
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e67e22;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+  }
+  

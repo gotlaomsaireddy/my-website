@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gotla Om Sai Reddy - Portfolio</title>
+  <meta name="google-site-verification" content="<meta name="google-site-verification" content="0ZudKU5gr_QBkBdJkbnzYhM664nUisALtWxDHCrOsEU" />" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f172a;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #0f172a;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      color: #22c55e;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 90vh;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .intro {
+      max-width: 600px;
+    }
+    .intro h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .intro h2 {
+      font-size: 24px;
+      color: white;
+    }
+    .intro h2 span {
+      color: #22c55e;
+    }
+    .intro p {
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+    .btn {
+      background-color: #22c55e;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #16a34a;
+    }
+    .socials {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+    }
+    .socials a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .socials a:hover {
+      color: #22c55e;
+    }
+    .profile {
+      position: relative;
+    }
+    .profile img {
+      border-radius: 50%;
+      border: 5px solid #22c55e;
+      width: 300px;
+      height: 360px;
+      object-fit: cover;
+    }
+    section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 32px;
+      color: #22c55e;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    .service-card {
+      background-color: #1e293b;
+      padding: 30px;
+      border-radius: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid transparent;
+    }
+    .service-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 30px rgba(0, 255, 128, 0.1);
+      border: 1px solid #22c55e;
+    }
+    .service-card h3 {
+      color: #22c55e;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      color: #cbd5e1;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .card-icon {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #22c55e;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+        <img src="sai.png.jpg" alt="Logo" style="width: 50px; height: 60px; border-radius: 50%; margin-right: 10px;">
+    </div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" id="home">
+    <div class="intro" data-aos="fade-right">
+      <h1>Gotla Om Sai Reddy</h1>
+      <h2>I'm a <span> Developer</span></h2>
+      <P></P>
+        Hey! I'm Gotla Om Sai Reddy - just a curious soul who loves tech, travel, and building cool stuff. I’m diving deep into Java full stack development and Power BI, aiming to become a solid Software Development Engineer (SDE) one day.
+        
+        I graduated in Electrical and Electronics Engineering, and now I’m shifting gears into the world of software. Learning, experimenting, and exploring new tools is my jam.
+        
+        Outside of tech, I’m a huge fan of bike trips . I also do a bit of freelancing here and there, mainly in data entry and tech gigs.
+        
+        This site is my little corner of the internet — explore around and hit me up if you wanna connect!.</p>
+      <a href="GOTLA OM SAI REDDY.pdf" class="btn" download>Download CV</a>
+      <div class="socials">
+        <a href="https://github.com/gotlaomsaireddy" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gotla-om-sai-reddy-3827bb1b5" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/sai_red_dy" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/12HEq5rNY58/" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="profile" data-aos="fade-left">
+      <img src="profile.jpg" alt="Profile Picture">
+    </div>
+  </div>
+
+  <section id="services">
+    <h2 data-aos="fade-up">Services</h2>
+    <div class="services-grid">
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-paint-brush card-icon"></i>
+        <h3>Web Design</h3>
+        <p>Modern, clean, and responsive web design tailored for your brand.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-pen-nib card-icon"></i>
+        <h3>Content Writing</h3>
+        <p>SEO-optimized, engaging content that captures your voice and message.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fas fa-share-alt card-icon"></i>
+        <h3>Social Media</h3>
+        <p>Grow your online presence with strategic content planning and engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2 data-aos="fade-up">Resume</h2>
+    <div class="services-grid">
+      <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+        <i class="fas fa-user-graduate card-icon"></i>
+        <h3>Education</h3>
+        <p>Bachelor’s in Electrical & Electronics Engineering, JNTUA University, 2025</p>
+      </div>
+      <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+        <i class="fas fa-briefcase card-icon"></i>
+        <h3>Certifications</h3>
+        <p>Data Analytics , Aws Cloud & Data Engineering.</p>
+      </div>
+      <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+        <i class="fas fa-code card-icon"></i>
+        <h3>Skills</h3>
+        <p>HTML, CSS, JavaScript , PowerBI , Tableau.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2 data-aos="fade-up">Portfolio</h2>
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-right" data-aos-delay="100">
+        <i class="fas fa-laptop-code card-icon"></i>
+        <h3>Project One</h3>
+        <p>I Designed And Built My Personal Portfolio with HTML, CSS, and JavaScript .</p>
+      </div>
+      <div class="service-card" data-aos="fade-right" data-aos-delay="200">
+        <i class="fas fa-blog card-icon"></i>
+        <h3>Home Automation</h3>
+        <p>This project is a Home Automation System that allows users to control Home Appliances. .</p>
+      </div>
+      <div class="service-card" data-aos="fade-right" data-aos-delay="300">
+        <i class="fas fa-mobile-alt card-icon"></i>
+        <h3>Analysis Of A 3-Phase Pv Integrated Upqc system</h3>
+        <p>This project focuses on the power quality conditioner.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+      <h2 style="color: #22c55e; font-size: 32px; margin-bottom: 30px;">Let's Work Together</h2>
+      <form action="https://formspree.io/f/xqaqzqdd" method="POST" style="background-color: #1e293b; padding: 40px; border-radius: 20px; max-width: 600px; width: 100%; display: flex; flex-direction: column; gap: 20px;">
+        <input type="text" name="name" placeholder="Full Name" required style="padding: 15px; border-radius: 10px; border: none; font-size: 16px;">
+        <input type="email" name="email" placeholder="Email Address" required style="padding: 15px; border-radius: 10px; border: none; font-size: 16px;">
+        <input type="text" name="phone" placeholder="Phone Number" required style="padding: 15px; border-radius: 10px; border: none; font-size: 16px;">
+        <input type="text" name="subject" placeholder="Email Subject" required style="padding: 15px; border-radius: 10px; border: none; font-size: 16px;">
+        <textarea name="message" placeholder="Your Message" required style="padding: 15px; border-radius: 10px; border: none; font-size: 16px; resize: vertical;" rows="5"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 20px; background-color: #0f172a;">
+    &copy; 2025 Sai. All Rights Reserved.
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+</script>
+</body>
+</html>
